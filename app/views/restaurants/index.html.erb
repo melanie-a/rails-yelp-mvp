@@ -1,0 +1,8 @@
+<%= render 'navbar', restaurant: @restaurant %>
+
+<% @restaurants.each do |restaurant| %>
+<br><%= link_to restaurant.name, restaurant_path(restaurant) %>
+<br><%= restaurant.address %>
+<% end %>
+
+</div>
